@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageIcon>log.png</PackageIcon>
+    <Authors>Andrey O.</Authors>
+    <PackageProjectUrl>https://github.com/mylab-log/ctx-trace</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mylab-log/ctx-trace.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>log logging httpcontext enrichment</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Extension for `MyLab.Log.Ctx` which add trace information into log message.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\MyLab.Log.Ctx.Trace.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\MyLab.Log.Ctx.Trace.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MyLab.Log.Ctx" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="log.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

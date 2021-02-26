@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyLab.Log.Ctx.Trace</name>
+    </assembly>
+    <members>
+        <member name="T:MyLab.Log.Ctx.Trace.HttpTraceIdLogCtx">
+            <summary>
+            Adds to log trace id from http context
+            </summary>
+        </member>
+        <member name="M:MyLab.Log.Ctx.Trace.HttpTraceIdLogCtx.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Initializes a new instance of <see cref="T:MyLab.Log.Ctx.Trace.HttpTraceIdLogCtx"/>
+            </summary>
+        </member>
+        <member name="M:MyLab.Log.Ctx.Trace.HttpTraceIdLogCtx.Apply(MyLab.Log.Dsl.DslExpression)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyLab.Log.Ctx.Trace.TraceLogContextExtensionConstants">
+            <summary>
+            Contains constant literal identifiers
+            </summary>
+        </member>
+        <member name="F:MyLab.Log.Ctx.Trace.TraceLogContextExtensionConstants.TraceIdLabelName">
+            <summary>
+            Trace-id label name
+            </summary>
+        </member>
+    </members>
+</doc>
